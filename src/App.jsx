@@ -23,7 +23,6 @@ function App() {
   }
 
   const handleSubmit = () => {
-    console.log('clicouuu')
 
     setError(null)
     setIsRequest(true)
