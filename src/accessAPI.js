@@ -5,7 +5,7 @@ export function login( {email, password} ) {
     return (
         new Promise((resolve, reject) => {
             setTimeout(() => {
-                if(password === 'senha@123' && !!email) {
+                if(password === 'Senha@123' && !!email) {
                     resolve()
                 } else {
                     reject({messege: 'E-mail ou senha inválido.'})

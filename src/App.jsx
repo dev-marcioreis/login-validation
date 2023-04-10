@@ -54,6 +54,10 @@ function App() {
           </div>
         </div>
       </div>
+      <aside className='info'>
+        <p>E-mail: email@email.com</p>
+        <p>Senha: Senha@123</p>
+      </aside>
     </>
 
   )

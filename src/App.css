@@ -133,3 +133,14 @@ button {
     box-shadow: var(--shadow);
     cursor: pointer;
 }
+.info {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--dark-color);
+    padding: 1rem;
+    border-radius: .5rem;
+    font-size: .9rem;
+    font-weight: 200;
+}
