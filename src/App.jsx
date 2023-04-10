@@ -1,34 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './app.css'
+import { AiOutlineSecurityScan as Form, AiOutlineCheck as Success } from 'react-icons/ai'
+import { MdOutlineDangerous as Danger } from 'react-icons/md'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    
+    <>
+      <div className="wrapper">
+        <div className="login__form">
+          <div className="login__title">
+            <i><Form /></i>
+            <h1>validação de acesso</h1>
+          </div>
+          <div className="error__messege">
+            <i><Danger /></i>
+            <h2>mensagem de erro</h2>
+          </div>
+          <div className="success__messege">
+            <i><Success /></i>
+            <h2>sucesso</h2>
+          </div>
+          <div className="rows">
+            <label htmlFor={'email'}>email</label>
+            <input type={'email'} id={'email'} autoComplete="off" />
+          </div>
+          <div className="rows">
+            <label htmlFor={'password'}>senha</label>
+            <input type={'password'} id={'password'} />
+          </div>
+          <div className="form__btn">
+            <button>acessar</button>
+          </div>
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+    </>
+
   )
 }
 
