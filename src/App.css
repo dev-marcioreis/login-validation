@@ -104,6 +104,11 @@ label {
     font-size: 1.1rem;
     font-weight: 100;
 }
+label i {
+    color: var(--white-color);
+    font-size: .9rem;
+    margin-right: .2rem;
+}
 input {
     width: 70%;
     border-radius: .2rem;

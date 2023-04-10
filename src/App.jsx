@@ -1,6 +1,7 @@
 import './app.css'
-import { AiOutlineSecurityScan as Form, AiOutlineCheck as Success } from 'react-icons/ai'
+import { AiOutlineSecurityScan as Form, AiOutlineCheck as Success, AiOutlineMail as Email } from 'react-icons/ai'
 import { MdOutlineDangerous as Danger } from 'react-icons/md'
+import { BsKey as Password } from 'react-icons/bs'
 
 function App() {
 
@@ -22,11 +23,11 @@ function App() {
             <h2>sucesso</h2>
           </div>
           <div className="rows">
-            <label htmlFor={'email'}>email</label>
+            <label htmlFor={'email'}><i><Email /></i>email</label>
             <input type={'email'} id={'email'} autoComplete="off" />
           </div>
           <div className="rows">
-            <label htmlFor={'password'}>senha</label>
+            <label htmlFor={'password'}><i><Password /></i>senha</label>
             <input type={'password'} id={'password'} />
           </div>
           <div className="form__btn">
