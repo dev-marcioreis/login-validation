@@ -1,14 +1,14 @@
 export function login( {email, password} ) {
     
-    const delay = (.7 + Math.random() * 2) * 1000
+    const delay = (0.5 + Math.random() * 2) * 1000
 
     return (
         new Promise((resolve, reject) => {
             setTimeout(() => {
-                if(password === 'Senha@123' && !!email) {
-                    resolve()
+                if(password === 'senha@123' && !!email) {
+                    resolve({messege: 'Acesso com sucesso'})
                 } else {
-                    reject({messege: 'E-mail ou senha inválido.'})
+                    reject({messege: 'E-mail ou senha inválido'})
                 }
             }, delay)
         })
