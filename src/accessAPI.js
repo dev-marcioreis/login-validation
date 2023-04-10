@@ -4,7 +4,7 @@ export function login( {email, password} ) {
 
     return (
         new Promise((resolve, reject) => {
-            setTimeout(function() {
+            setTimeout(() => {
                 if(password === 'senha@123' && !!email) {
                     resolve()
                 } else {
@@ -13,5 +13,4 @@ export function login( {email, password} ) {
             }, delay)
         })
     )
-
 }
