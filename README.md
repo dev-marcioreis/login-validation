@@ -7,7 +7,7 @@ O objetivo é simular acesso em um sistema ou site validando as crendênciais.
 
 ## 🚀 Finalizado!
 
-## 📋 Técnologias
+## 📋 Tecnologias
 React + Vite
 
 ## ✒️ Autor
